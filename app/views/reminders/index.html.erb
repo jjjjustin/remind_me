@@ -1,0 +1,15 @@
+
+
+<h2> | <em>Reminders for</em> |</h2>
+<h1><%= current_user.username %></h1>
+<hr>
+
+<ul class="users">
+  <% @reminders.each do |reminder| %>
+    <li>
+      <strong><%= reminder.title %><strong> <br>
+      <strong><%= reminder.description %><strong> <br>
+      <strong><%= reminder.priority %><strong>
+    </li>
+  <% end %>
+</ul>
