@@ -3,8 +3,8 @@
     <%= simple_form_for([current_user, @reminder]) do |f| %>
       <%= f.input :title %>
       <%= f.input :description %>
-      <%= f.select :priority, options_for_select([['urgent'],['high'],['normal'],['low']], params[:priority]),
-          {}, { :class => 'span3 controls controls-row' } %>
+      <%= f.select :priority, ['high' ,'urgent','normal','low'], prompt: "Select priority level" %>
+
 
       <div class="form-actions">
         <%= f.button :submit %>
@@ -12,4 +12,6 @@
     <% end %>
   </div>
 </div>
+
+
 

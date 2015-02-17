@@ -7,9 +7,9 @@
 <ul class="users">
   <% @reminders.each do |reminder| %>
     <li>
-      <strong><%= reminder.title %><strong> <br>
-      <strong><%= reminder.description %><strong> <br>
-      <strong><%= reminder.priority %><strong>
+      <strong> Reminder |   <%= reminder.title %><strong> <br>
+      <strong> Description |   <%= reminder.description %><strong> <br>
+      <strong> Priority |   <%= reminder.priority %><strong>
     </li>
   <% end %>
 </ul>
